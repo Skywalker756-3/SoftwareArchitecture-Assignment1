@@ -1,0 +1,13 @@
+a) What are the important categories of architectural structures, briefly explain each
+category with at least one example.
+
+
+
+b) What is an architectural pattern? Briefly describe a commonly used architectural pattern.
+
+
+
+c) In the Introduction to Software Architecture lectures, we discussed that one of the issues
+not considered good practice is having too many inter-module calls between modules.
+Why is that? What are two good design principles that an architect should follow to avoid
+having a lot of inter-module calls?
