@@ -11,3 +11,9 @@ c) In the Introduction to Software Architecture lectures, we discussed that one 
 not considered good practice is having too many inter-module calls between modules.
 Why is that? What are two good design principles that an architect should follow to avoid
 having a lot of inter-module calls?
+
+As we discussed in the lectures too many intermodule calls increase interelement communication and create high coupling betwen modules, which hurts and have a negative effect on the key quality attributes such as modifiability and reusability.
+This makes changes nonelocal, so a small modification in one module may require changes in many other modules, increasing maintenance cost and complexity. to avoid this problem, an architect should follow the principle of low coupling.
+Low coupling reduces dependencies between modules so that changes in one module have minimal impact on other modules.
+Another important design principle is high cohesion. That ensures that each module has a well defined responsibility, reducing the need for frequent interactions with other modules. 
+
