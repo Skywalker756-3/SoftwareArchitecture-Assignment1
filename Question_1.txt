@@ -1,12 +1,16 @@
 a) What are the important categories of architectural structures, briefly explain each
 category with at least one example.
 
-    We categorize architecture structure designs into patterns, in architecture the famous design patterns are called the Gang of Four (GoF)
-    pattern. These have three categories: structural, behavioural and creational. One such structural pattern is an adapter such 
-    as a modular screwdriver, that allows the replacement of heads to fit different screws. One behavioural pattern is the 
-    strategy pattern, it's defined by an expected change in how it gets to it's solution, an example of this is a golfer's golf
-    club stash. They interchange between clubs depending on what would be optimal for the situation. Lastly, creational patterns
+    We categorize architecture structures based on the nature of the elements and how they reason about the system.
+    
+    The Connector & Component category has structures are composed of elements that either have a runtime behaviour 
+    or makes communcations between elements of runtime behaviour. An example of this is a process. 
+    
+    The Module category are structures with a compartmentalized responsibility that is static, without a runtime. 
+    A good example is a class in java.
 
+    The Allocation structures map the software structures to the systems nonsoftware structures. An example is speakers
+    because they map audio data into vibrations.
 
 b) What is an architectural pattern? Briefly describe a commonly used architectural pattern.
 
