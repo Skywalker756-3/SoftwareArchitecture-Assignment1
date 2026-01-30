@@ -1,10 +1,18 @@
 a) What are the important categories of architectural structures, briefly explain each
 category with at least one example.
 
+    We categorize architecture structure designs into patterns, in architecture the famous design patterns are called the Gang of Four (GoF)
+    pattern. These have three categories: structural, behavioural and creational. One such structural pattern is an adapter such 
+    as a modular screwdriver, that allows the replacement of heads to fit different screws. One behavioural pattern is the 
+    strategy pattern, it's defined by an expected change in how it gets to it's solution, an example of this is a golfer's golf
+    club stash. They interchange between clubs depending on what would be optimal for the situation. Lastly, creational patterns
 
 
 b) What is an architectural pattern? Briefly describe a commonly used architectural pattern.
 
+     We categorize architecture structure designs into patterns, in architecture the famous design patterns are called the Gang of Four (GoF)
+    pattern. These have three categories: structural, behavioural and creational. One such structural pattern is an adapter such 
+    as modular screwdriver heads, they allows the replacement of heads to fit different screws. 
 
 
 c) In the Introduction to Software Architecture lectures, we discussed that one of the issues
