@@ -1,6 +1,7 @@
 package adapter;
 
 import java.util.ArrayList;
+import list.List;
 
 public class ArrayListAdapter implements List {
 
@@ -17,7 +18,11 @@ public class ArrayListAdapter implements List {
 
     @Override
     public Object get(int index) {
-        return data.get(index);
+    	if(this.count() > 0)
+    	{
+    		return data.get(index);
+    	}
+    	return null;
     }
 
     @Override
