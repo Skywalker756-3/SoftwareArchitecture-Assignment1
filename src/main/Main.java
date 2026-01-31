@@ -1,5 +1,6 @@
 package main;
 import adapter.ArrayListAdapter;
+
 import list.List;
 import queue.FIFOQueue;
 import queue.*;
@@ -105,33 +106,40 @@ public class Main {
 	
 	public static boolean testFIFO_Queue()
 	{
-		boolean result = false;
-		/*
+		System.out.println("FIFO_QUEUE Test Results:\n");
 		try {
 			List myList = new ArrayListAdapter();
 			Queue myQueue = new FIFOQueue(myList);
 			for (int i = 0; i < 100; i++) {
-			int n = Math.random() * 100;
-			myQueue.enqueue(n);
-			System.out.print(n + “ ”);
+				int n = (int) (Math.random() * 100);
+				myQueue.enqueue(n);
+				System.out.print(n + " ");
+				}
+			System.out.println("FIFO output:");
+			while(! myQueue.isEmpty()) {
+				int n = myQueue.head();
+				System.out.print(n + " ");
+				myQueue.dequeue();
+				}
 			}
-			System.out.println(“FIFO output:”);
-			while(! myQueue.isEmpty() {
-			int n = myQueue.head();
-			System.out.print(n + “ ”);
-			myQueue.dequeue();
-			}
+		catch(Exception e)
+		{
+			return false;
 		}
-		*/
-		return result;
+		return true;
 	}
 	
 	public static void main(String[] args) {
 		// This program is split into two parts: ArrayListAdapter Test and FIFO
 
-		//This try block will catch any underlying issues, and ones I test for
-		arrayListAdapterTest();
-		
+		//this holds the results of the tests for the summary
+		boolean results [] = new boolean[2];
+		results [0] = arrayListAdapterTest();
+		results [1] = testFIFO_Queue();
+		System.out.println("\nTest Summary");
+		System.out.println("ArrayListAdapterTest: "+ results[0] );
+		System.out.println("FIFO_QueueTest: "+ results[1] );
+
 		System.out.println("\t\tEnd of Program");
 	}
 
