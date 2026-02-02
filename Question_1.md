@@ -1,0 +1,30 @@
+a) What are the important categories of architectural structures, briefly explain each
+category with at least one example.
+
+    We categorize architecture structures based on the nature of the elements and how they reason about the system.
+    There are three categories of structures: Connector & Component, Module, and Allocation structures
+    
+    The Connector & Component category has structures are composed of elements that either have a runtime behaviour 
+    or makes communcations between elements of runtime behaviour. An example of this is a process. 
+    
+    The Module category are structures with a compartmentalized responsibility that is static, without a runtime. 
+    A good example is a class in java.
+
+    The Allocation structures map the software structures to the systems nonsoftware structures. An example is speakers
+    because they map audio data into vibrations.
+
+b) What is an architectural pattern? Briefly describe a commonly used architectural pattern.
+
+     We categorize architecture structure designs into patterns, in architecture the famous design patterns are called the Gang of Four (GoF) pattern. These have three categories: structural, behavioural and creational. One such structural pattern is an adapter such as modular screwdriver heads, they allows the replacement of heads to fit different screws. 
+
+
+c) In the Introduction to Software Architecture lectures, we discussed that one of the issues
+not considered good practice is having too many inter-module calls between modules.
+Why is that? What are two good design principles that an architect should follow to avoid
+having a lot of inter-module calls? 
+
+    As we discussed in the lectures too many intermodule calls increase interelement communication and create high coupling betwen modules, which hurts and have a negative effect on the key quality attributes such as modifiability and reusability.
+    This makes changes nonelocal, so a small modification in one module may require changes in many other modules, increasing maintenance cost and complexity. to avoid this problem, an architect should follow the principle of low coupling.
+    Low coupling reduces dependencies between modules so that changes in one module have minimal impact on other modules.
+    Another important design principle is high cohesion. That ensures that each module has a well defined responsibility, reducing the need for frequent interactions with other modules. 
+
