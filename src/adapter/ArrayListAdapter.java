@@ -43,7 +43,7 @@ public class ArrayListAdapter implements List {
 
     @Override
     public boolean include(Object obj) {
-        return data.contains(obj);
+    	return data.contains(obj);
     }
 
     @Override

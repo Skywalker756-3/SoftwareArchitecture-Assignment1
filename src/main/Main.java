@@ -7,8 +7,7 @@ import queue.*;
 
 public class Main {
 
-	public static boolean arrayListAdapterTest()
-	{
+	public static boolean arrayListAdapterTest(){
 		/* This program will test the ArrayListAdapter and how it works an adapter
 		 * pattern structure to allow this program to interface with the list object
 		*/
@@ -16,8 +15,8 @@ public class Main {
 		try {
 			//Test Instantiation
 			ArrayListAdapter myList = new ArrayListAdapter();
-			Object positionTestValue = "k";
-			Object inclusionTestValue = 5;
+			var positionTestValue = "k";
+			var inclusionTestValue = 5;
 			int inclusionPosition = 5;
 			System.out.println("ArrayListAdapter Test Results:\n");
 			
@@ -31,8 +30,7 @@ public class Main {
 			myList.deleteFirst();
 			myList.deleteLast();
 			System.out.println("Post-deletion List Count: " + myList.count());
-			if((int)myList.count() !=0)
-			{
+			if((int)myList.count() !=0){
 				throw new Exception("Deletion cause an unexpected count: "+myList.count());
 			}
 			
@@ -41,41 +39,36 @@ public class Main {
 			myList.get(inclusionPosition); 
 			//This can throw a bound error at the try block 
 			
-			
 			//Fill up List for further tests
 			System.out.print("List: ");
-			for(int i=0; i<10; i++)
-			{
+			for(int i=0; i<10; i++){
 				myList.append(i);
 				System.out.print(myList.get(i));
 			}
 			System.out.println("\nRefilled List Count: " + myList.count());
 			
 			//Test the get method on a filled list
-			if((int)myList.get(inclusionPosition) != (int)inclusionTestValue)
-			{
+			if((int)myList.get(inclusionPosition) != (int)inclusionTestValue){
 				throw new Exception(".get() obtained: "+(int)myList.get(inclusionPosition)+" Expected: "+(int)inclusionTestValue);
 			}
 			
 			//Test the first method
-			if((int)myList.first() !=0)
-			{
+			if((int)myList.first() !=0){
 				throw new Exception("Unexpected first value obtained from .first()");
 			}
 			
 			//Test the last method
-			if((int)myList.last() !=9)
-			{
+			if((int)myList.last() !=9){
 				throw new Exception("Unexpected last value obtained from .first()");
 			}
 			
 			//Test the include method
-		/*	
-			if(myList.include(inclusionTest))
+			myList.append(inclusionTestValue);
+			if(myList.include(inclusionTestValue)!=true)
 			{
 				throw new Exception(".include method, was not able to detect a value in the list");
 			}
-		*/
+		
 			//Test the prepend method
 			myList.prepend(positionTestValue );
 			if(myList.first().toString()!=positionTestValue.toString())
@@ -99,7 +92,7 @@ public class Main {
 			System.out.println("\nArrayListAdapter has failed testing:\n"+ e.getMessage());
 		}
 		finally {
-			System.out.println("--------------------------------------\n\t\tTest Complete");
+			System.out.println("Test Complete\n--------------------------------------\n");
 		}
 		return result;
 	}
@@ -130,12 +123,14 @@ public class Main {
 	}
 	
 	public static void main(String[] args) {
-		// This program is split into two parts: ArrayListAdapter Test and FIFO
+		// This program is split into two parts: ArrayListAdapter Test and FIFO_Queue Test, each one tests it's matching file in this project
 
 		//this holds the results of the tests for the summary
 		boolean results [] = new boolean[2];
 		results [0] = arrayListAdapterTest();
 		results [1] = testFIFO_Queue();
+		
+		//Summarize Tests
 		System.out.println("\nTest Summary");
 		System.out.println("ArrayListAdapterTest: "+ results[0] );
 		System.out.println("FIFO_QueueTest: "+ results[1] );

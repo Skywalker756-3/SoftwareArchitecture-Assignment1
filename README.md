@@ -4,19 +4,8 @@
 This software has two functions, first is that it creates an bridge archiecture pattern to support the creation of 
 a FIFO Queue. The second is that
 
-##Work Distribution
-The work for this assignment is distribtuted as follows: To view the questions check out the instructions pdf in this workspace
-###Q1:
-    a: Brian Fernandes              
-    b: Brian Fernandes
-    c: Kourosh moghnian hokmabad
-###Q2:
-    a: Kourosh moghnian hokmabad
-    b: Brian Fernandes
-    c: Brian Fernandes
-    d: Kourosh moghnian hokmabad
-###Q3:  
-    Amir
+#Team
+
 
 ##Files by Question
 The questions are listed in the 'Assignment 1_W2026.pdf' file
@@ -31,3 +20,4 @@ The questions are listed in the 'Assignment 1_W2026.pdf' file
     d: 'Question2 part D.JPG'
 ###Q3:
     Question3 Folder, images>Question3Output.png
+
