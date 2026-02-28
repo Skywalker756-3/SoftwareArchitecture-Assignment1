@@ -11,6 +11,7 @@ Brian Fernandes
 0817246
 
 Amirmohammad Sadeghi
+0787126
 
 ##Files by Question
 The questions are listed in the 'Assignment 1_W2026.pdf' file
